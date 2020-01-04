@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         val fr = supportFragmentManager.findFragmentById(R.id.screen_area)
-
         if (fr is WebviewFragment) {
             this@MainActivity.finish()
             System.exit(0)
